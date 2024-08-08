@@ -96,6 +96,6 @@ if __name__ == '__main__':
     file_path = 'Current_Schedule.csv'
     df = pd.read_csv(file_path)
     df = refine_schedule(df)
-    df.to_csv('schedule_changed.csv')
+    # df.to_csv('schedule_changed.csv')
     time_tables = get_time_tables(df)
     print(df.head())
